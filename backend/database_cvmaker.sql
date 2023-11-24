@@ -35,7 +35,8 @@ CREATE TABLE data_organisasi (
     id_akun INT REFERENCES data_akun(id_akun),
     nama_organisasi VARCHAR(255) NOT NULL,
     jabatan VARCHAR(255) NOT NULL,
-    periode VARCHAR(255) NOT NULL,
+    periode_awal INT NOT NULL,
+    periode_akhir VARCHAR(255) NOT NULL,
     deskripsi_jabatan VARCHAR(255) NOT NULL
 );
 
@@ -46,6 +47,7 @@ CREATE TABLE data_skill (
     id_akun INT REFERENCES data_akun(id_akun),
     kategori_skill kategori NOT NULL,
     nama_skill VARCHAR(255) NOT NULL,
+    deskripsi VARCHAR(255),
     level INT NOT NULL
 );
 

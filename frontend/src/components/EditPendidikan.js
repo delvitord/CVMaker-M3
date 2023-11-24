@@ -137,7 +137,7 @@ const EditPendidikan = () => {
 
   return (
     <div>
-      <section id="editPendidikan" className="editPendidikan">
+      <section id="editPendidikan" className="pendidikan">
         <div className="container">
           <div className="section-title">
             <h2>Edit Education</h2>
@@ -161,8 +161,6 @@ const EditPendidikan = () => {
                       className="form-select"
                     >
                       <option value="">Pilih Jenjang</option>
-                      <option value="SD">SD</option>
-                      <option value="SMP">SMP</option>
                       <option value="SMA">SMA</option>
                       <option value="SMK">SMK</option>
                       <option value="D3">D3</option>
@@ -266,7 +264,7 @@ const EditPendidikan = () => {
                     type="submit"
                     disabled={isSubmitting} // Menonaktifkan tombol saat sedang mengirimkan permintaan
                   >
-                    {isSubmitting ? "Adding..." : "Add Data"}
+                    {isSubmitting ? "Adding..." : "Update Data"}
                   </button>
                 </div>
               </form>

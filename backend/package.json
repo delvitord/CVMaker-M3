@@ -28,5 +28,8 @@
     "passport-jwt": "^4.0.1",
     "pg": "^8.11.3",
     "sequelize": "^6.33.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
